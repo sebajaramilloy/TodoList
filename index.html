@@ -6,6 +6,35 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="header-container">
     <h1>Todo List</h1>
+    </div>
+<section class="input-section">
+    <label for="nuevaTareaInput">Nueva Tarea</label>
+    <div class="input-group">
+        <input type="text" id="nuevaTareaInput" placeholder="Ingresa una tarea">
+        <button id="btnAgregar">Agregar</button>        
+    </div>
+</section>
+
+<main class="main-container">
+    <aside class="resumen">
+        <p>Total : <strong id="tareasRealizadas">0</strong></p>
+    </aside>
+    <section class="tareas">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tarea</th>
+                <th></th> <th></th>
+            </tr>
+        </thead>
+        <tbody id="listaTareas"></tbody>
+    </table>
+    </section>
+</main>
+
+<script src="./assets/js/script.js"></script>
 </body>
 </html>

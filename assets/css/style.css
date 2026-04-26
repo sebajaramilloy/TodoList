@@ -7,7 +7,84 @@ body {
 }
 
 .header-container {
-border-bottom: 1pc solid #ddd;
-margin-bottom: 30px;    
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.input-section {
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.input-group input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.main-container {
+    display: flex;
+    gap: 50px;
+}
+
+.resumen {
+    min-width: 180px;
+    font-size: 1.2rem;
+}
+
+.tareas {
+    flex-grow: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 2px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Estilo para tareas completadas */
+.completada {
+    text-decoration: line-through;
+    color: #888;
+    font-style: italic;
+}
+
+.btn-borrar {
+    color: #dc3545;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-borrar:hover {
+    color: #a71d2a;
 }
 

@@ -1,43 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo List</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="header-container">
-    <h1>Todo List</h1>
+        <h1>Todo List</h1>
     </div>
-<section class="input-section">
-    <label for="nuevaTareaInput">Nueva Tarea</label>
-    <div class="input-group">
-        <input type="text" id="nuevaTareaInput" placeholder="Ingresa una tarea">
-        <button id="btnAgregar">Agregar</button>        
-    </div>
-</section>
 
-<main class="main-container">
-        <aside class="resumen">
-        <p>Total: <strong id="totalTareas">0</strong></p>
-        <p>Realizadas: <strong id="tareasRealizadas">0</strong></p>
-    </aside>
-
-    <section class="tareas">
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Tarea</th>
-                <th></th> <th></th>
-            </tr>
-        </thead>
-        <tbody id="listaTareas"></tbody>
-    </table>
+    <section class="input-section">
+        <label for="nuevaTareaInput">Nueva Tarea</label>
+        <div class="input-group">
+            <input type="text" id="nuevaTareaInput" placeholder="Ingresa una tarea">
+            <button id="btnAgregar">Agregar</button>        
+        </div>
     </section>
-</main>
 
-<script src="script.js"></script>
+    <main class="main-container">
+        <aside class="resumen">
+            <p>Total: <strong id="totalTareas">0</strong></p>
+            <p>Realizadas: <strong id="tareasRealizadas">0</strong></p>
+        </aside>
+        
+        <section class="tareas">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tarea</th>
+                        <th></th> 
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="listaTareas"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
